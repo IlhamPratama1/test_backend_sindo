@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "327e7e1e-b78f-49e8-90de-1996def7b296",
+		"name": "test_sindo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10575580"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/users/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ilham@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "ilham",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "indonesia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ilhamss@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "ilhamss",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "indonesiass",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/products?page=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test_product",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Total Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/products/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"products",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Total by Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/products/region",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"products",
+						"region"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Highest Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/products/highest-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"products",
+						"highest-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "from_user_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "to_user_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "balance",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/user-transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"user-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/user-transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"user-transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sindo_backend_test/user-transaction/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sindo_backend_test",
+						"user-transaction",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
